@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     />
 
-    <!-- Bootstrap Js -->
+    <!-- Bootstrap Js 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>-->
 
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -29,28 +33,23 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="container navigation pt-3">
+    <div class="container navigation pt-3 container-fluid">
       <div class="row">
-        <div class="col-6 d-flex justify-content-start align-items-center">
+        <div class="col-lg-6 d-flex justify-content-start align-items-center">
           <i class="fas fa-code fa-2x text-warning pb-3"></i>
-          <h5 class="d-inline pl-2 text-white">Portfolio</h5>
+          <h5 class="d-inline pl-2 text-white" style="font-size: 3vh;">Portfolio</h5>
         </div>
-        <div class="col-6 pt-2">
+        <div class="col-lg-6 pt-2" style="font-size: 3vh;">
           <div
-            class="row text-center p-0 d-flex justify-content-end align-items-center"
-          >
-            <div class="col-3">
-              <a href="#about" class="text-white navigation-link">About</a>
+            class="row text-center p-0 d-flex justify-content-end align-items-center" >
+            <div class="col-3" >
+              <a href="#about" class="text-white navigation-link" >About</a>
             </div>
             <div class="col-3">
-              <a href="#projects" class="text-white navigation-link"
-                >Projects</a
-              >
+              <a href="#projects" class="text-white navigation-link">Projects</a>
             </div>
             <div class="col-3">
-              <a href="#Contact-Me" class="text-white navigation-link"
-                >Contact</a
-              >
+              <a href="#Contact-Me" class="text-white navigation-link">Contact</a>
             </div>
             <div class="col-3">
               <a
@@ -68,46 +67,46 @@
     <!-- Main Container -->
     <div class="main-container container">
       <div class="row main_row">
-        <div class="col-6">
-          <h2 class="text-white">Hello, I'm</h2>
-          <h1 class="text-warning m-heading" style="font-size:5vh;">Aditya Kumar Dubey</h1>
-          <h2 class="text-white">Web Developer</h2>
+        <div style="font-size: 10vh;">
+          <h2 class="text-white" style="font-size: 5vh;">Hello, I'm</h2>
+          <h1 class="text-warning m-heading" style="font-size: 5vh;">Aditya Kumar Dubey</h1>
+          <h2 class="text-white" style="font-size: 5vh;">Web Developer</h2>
         </div>
-        <div class="col-6">
+        
           <img
-            src="./img/mypic.jpg"
-            class="pic w-full"
+            src="./img/AdityaDubey.jpg"
+            class="pic w-full img-fluid"
           />
-        </div>
+        
       </div>
     </div>
 
     <!-- About Section -->
     <div id="about" class="container about p-5">
       <div class="row">
-        <div class="col-6">
-          <img src="./img/about_img.svg" class="pic w-full" />
+      <div class="col-lg-6 col-xs-6">
+          <img src="./img/about.jpg" class=" img-fluid" />
         </div>
-        <div class="col-6 pl-5 pt-5 pb-5 text-white">
+        <div class="col-lg-6 col-xs-6 pl-5 pt-5 pb-5 text-white" style="font-size: 2vh;">
           <h3 class="text-warning">About Me</h3>
-          <h1 class="m-heading">A little bit about me</h1>
+          <!--<h1 class="m-heading">A little bit about me</h1>-->
           <p>
-            I belong from a small city,<b class="text-warning">Deoghar</b>.
+            I belong from a small city, <b class="text-warning">Deoghar</b>.
             I was raised here and a lot of my memory is linked to this place.
           </p>
           <br />
-          <h4>My Hobbies</h4>
+          <h4 class="text-warning">My Hobbies</h4>
             <p>
             I like outdoor games like football,cricket.
             I love traveling and going on Vaccation trips
             and the best of all binge watching a Web/TV series</p>
             <br />
-            <h4>My Education</h4>
+            <h4 class="text-warning">My Education</h4>
             <p>Secondary Education: ST.Francis School,B.Deoghar</p>
             <p>plus 2 Education: Jawahar Vidya Mandir Shyamali,Ranchi</p>
             <p>Graduation: Currently persuing B.Tech in Information Technology from BIT MESRA</p>
             <br />
-            <h4>SKILLS</h4>
+            <h4 class="text-warning">SKILLS</h4>
             <p><ul>
                 <li>Competitive Programming</li>
                 <li>Web Development</li>
@@ -118,11 +117,11 @@
     </div>
 
     <!-- Projects Section -->
-    <div id="projects" class="container mt-5 pt-5">
-      <h1 class="text-warning mb-3 pb-2">My Projects</h1>
+    <div id="projects" class="container mt-5 pt-5" style="font-size: 2vh;">
+      <h1 class="text-warning mb-3 pb-2" style="font-size: 4vh;">My Projects</h1>
       <div class="row">
       <div class="col-4 mb-5">
-          <div class="card" style="width: 18rem;">
+          <div class="card" style="width: 20rem;">
             <img
               src="./img/tic-tac-toe.png"
               class="card-img-top"
@@ -130,11 +129,11 @@
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">Tic-Tac-Toe</h5>
+              <h5 class="card-title" style="font-size: 2vh;">Tic-Tac-Toe</h5>
               <p class="card-text">
                    This project was created by me in my 1st year when I acquired some basic knowledge about JAVASCRIPT.
               </p>
-              <a href="https://dubeyaditya6232.github.io/Tic-Tac-Toe2.0/" class="btn btn-warning">See Project</a>
+              <a href="https://dubeyaditya6232.github.io/Tic-Tac-Toe2.0/" class="btn btn-warning" style="font-size: 2vh;">See Project</a>
             </div>
           </div>
         </div>
@@ -155,8 +154,8 @@
               <a href="#" class="btn btn-warning">See Project</a>
             </div>
           </div>
-        </div>
-        <div class="col-4 mb-5">
+        </div>-->
+        <!--<div class="col-4 mb-5">
           <div class="card" style="width: 18rem;">
             <img
               src="./images/e_commerce_platform.svg"
@@ -234,10 +233,10 @@
         <div id="Contact-Me" class="container-fluid">
             <div class="container text-white py-5">
                 <div class="row">
-                    <div col-6>
-                        <img src="img/contactme.png" class="pic w-full" />
-                    </div>
-                    <div class="col-6 pl-5 pt-5 pb-5 text-white">
+                    
+                        <img src="img/contactme.png" class="pic w-full img-fluid" />
+                    
+                    <div class=" pl-5 pt-5 pb-5 text-white" style="font-size: 2vh;">
                         <h2 class="text-warning">Contact Me</h2>
                         <p style="font-size: larger;">You can reach out to me from anywhere for collaborative works and teamming up for projects.</p>
                         <p style="font-size: larger;">Email: dubeyaditya5726@gmail.com<br>
